@@ -21,10 +21,10 @@ class Solution(object):
 
             left_max = 0
             left_max += find_result(root.left)
-            print left_max
+            print(left_max)
             right_max = 0
             right_max += find_result(root.right)
-            print right_max
+            print(right_max)
             self.sol = max(self.sol, left_max, right_max)
 
             all_same = False
